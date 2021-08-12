@@ -1,0 +1,32 @@
+.experienceBar {
+  display: flex;
+  align-items: center;
+}
+
+.experienceBar span {
+  font-size: 1rem;
+}
+
+.experienceBar > div {
+  /* indica primeira div da sessão */
+  flex: 1;
+  height: 4px;
+  border-radius: 4px;
+  background: var(--gray-light);
+  margin: 0 1.5rem;
+  position: relative;
+}
+
+.experienceBar > div > div {
+  height: 4px;
+  border-radius: 4px;
+  background: var(--green);
+}
+
+span.currentExperience {
+  position: absolute;
+  top: 12px;
+  transform: translateX(
+    50%
+  ); /*move 50 da direita para a esquerda no eix - horizontal - o centro do eixo y*/
+}
